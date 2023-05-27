@@ -127,7 +127,7 @@ button:focus {
 
 .menu-link {
   font-weight: 500;
-  color: var(--pressed-state-color);
+  /* color: var(--pressed-state-color); */
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -158,7 +158,7 @@ button:focus {
 .menu-item {
   padding-top: 24px;
   padding-bottom: 24px;
-  color: var(--pressed-state-color);
+  /* color: var(--pressed-state-color); */
 }
 
 .contact-info {
@@ -650,6 +650,7 @@ button:focus {
 
 .modal {
   position: absolute;
+  padding: 72px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -699,4 +700,160 @@ button:focus {
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--page-background-color);
+}
+
+/* Modal Window Form */
+
+.contact-form-heading {
+  text-align: center;
+  color: var(--hero-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.contact-form-field-wrapper {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form-checkbox-wrapper {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--helper-text-color);
+}
+
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms var(--time-function);
+}
+.contact-form-input:hover,
+.contact-form-input:focus {
+  border-color: var(--pressed-state-color);
+  outline: none;
+}
+
+.contact-form-message {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  resize: none;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  transition: border-color 250ms var(--time-function);
+}
+
+.contact-form-message::placeholder {
+  line-height: 14px;
+  font-size: 12px;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-message:hover,
+.contact-form-message:focus {
+  border-color: var(--pressed-state-color);
+  outline: none;
+}
+
+.contact-form-description {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--helper-text-color);
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.privacy-policy-link {
+  margin-left: 2px;
+}
+
+.privacy-policy-link {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--logo-brand-color);
+}
+
+.contact-submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  background-color: var(--logo-brand-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: var(--page-background-color);
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms var(--time-function);
+}
+.contact-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.contact-form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  width: 18px;
+  height: 24px;
+  fill: var(--overlay-color);
+  transition: fill 250ms var(--time-function);
+}
+
+.contact-form-input:hover + .contact-form-icon,
+.contact-form-input:focus + .contact-form-icon {
+  fill: var(--logo-brand-color);
+}
+
+.checkbox-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  padding: 4px 3px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.contact-form-check-icon {
+  fill: var(--light-mode-background-color);
+  opacity: 0;
+}
+
+.contact-form-checkbox:checked + .checkbox-icon > .contact-form-check-icon {
+  opacity: 1;
+}
+
+.contact-form-checkbox:checked + .checkbox-icon {
+  background-color: var(--pressed-state-color);
+}
+
+.contact-form-checkbox:focus + .checkbox-icon {
+  outline: 1px solid rgba(77, 90, 229, 1);
+}
+
+.contact-form-checkbox {
+  appearance: none;
+  position: absolute;
 }
