@@ -835,15 +835,6 @@ button:focus {
   outline: none;
 }
 
-.contact-form-description {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--helper-text-color);
-  font-style: normal;
-  font-size: 12px;
-  line-height: 14px;
-}
-
 .contact-form-container {
   margin-bottom: 8px;
 }
