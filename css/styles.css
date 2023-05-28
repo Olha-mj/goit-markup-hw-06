@@ -724,7 +724,7 @@ button:focus {
   color: var(--helper-text-color);
 }
 
-.contact-form-checkbox-wrapper {
+.contact-form-checkbox-container {
   display: flex;
   margin-bottom: 24px;
   align-items: center;
@@ -742,6 +742,7 @@ button:focus {
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms var(--time-function);
   outline: transparent;
+  background-color: transparent;
 }
 .contact-form-input:hover,
 .contact-form-input:focus {
@@ -757,7 +758,11 @@ button:focus {
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   font-size: 12px;
+  line-height: 1.17;
+  color: rgba(46, 47, 66, 0.2);
+  letter-spacing: 0.04em;
   transition: border-color 250ms var(--time-function);
+  outline: transparent;
 }
 
 .contact-form-message::placeholder {
@@ -820,6 +825,10 @@ button:focus {
   display: block;
 }
 
+.textaria-container {
+  margin-bottom: 16px;
+}
+
 .contact-form-icon {
   position: absolute;
   top: 50%;
@@ -834,7 +843,11 @@ button:focus {
   fill: var(--logo-brand-color);
 }
 
-.checkbox-icon {
+.checkbox-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -842,6 +855,9 @@ button:focus {
   padding: 4px 3px;
   cursor: pointer;
   margin-right: 8px;
+}
+
+.checkbox-icon {
 }
 
 .contact-form-check-icon {
@@ -871,4 +887,7 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--helper-text-color);
+}
+
+.checkbox-text {
 }
