@@ -726,7 +726,7 @@ button:focus {
 
 .contact-form-checkbox-wrapper {
   display: flex;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   align-items: center;
   font-style: normal;
   font-size: 12px;
@@ -862,6 +862,13 @@ button:focus {
 }
 
 .contact-form-checkbox {
-  appearance: none;
+  visibility: hidden;
   position: absolute;
+}
+
+.checkbox-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--helper-text-color);
 }
