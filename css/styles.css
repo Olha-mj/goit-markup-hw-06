@@ -821,6 +821,7 @@ button:focus {
   letter-spacing: 0.04em;
   transition: border-color 250ms var(--time-function);
   outline: transparent;
+  background-color: transparent;
 }
 
 .contact-form-message::placeholder {
@@ -918,6 +919,9 @@ button:focus {
 
 .contact-form-checkbox:checked + .checkbox-label > .checkbox-icon-wrapper {
   background-color: var(--pressed-state-color);
+  fill: var(--page-background-color);
+  border: none;
+  border-color: var(--pressed-state-color);
 }
 
 .contact-form-checkbox:focus + .checkbox-label > .checkbox-icon-wrapper {
