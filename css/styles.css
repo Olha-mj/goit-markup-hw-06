@@ -909,7 +909,7 @@ button:focus {
   cursor: pointer;
   margin-right: 8px;
   transition: background-color 250ms var(--time-function),
-    border 250ms var(--time-function);
+    border 250ms var(--time-function), fill 250ms var(--time-function);
 }
 
 .visually-hidden:checked + .checkbox-icon-wrapper {
